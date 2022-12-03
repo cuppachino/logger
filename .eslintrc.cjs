@@ -25,6 +25,10 @@ module.exports = {
 	},
 	plugins: ['@typescript-eslint', 'jsdoc', 'prettier'],
 	rules: {
+		// * 👕 ESLint
+		'@typescript-eslint/no-unused-vars': ['off'],
+		'@typescript-eslint/no-empty-function': ['off'],
+		'@typescript-eslint/no-explicit-any': ['off'],
 		// * 🔗 Imports
 		'@typescript-eslint/consistent-type-imports': [
 			'error',
@@ -40,6 +44,8 @@ module.exports = {
 			}
 		],
 		// * 📚 JSdoc
-		'jsdoc/require-asterisk-prefix': ['error', 'never']
+		'jsdoc/require-asterisk-prefix': ['error', 'never'],
+		'jsdoc/require-jsdoc': ['off'],
+		'jsdoc/require-returns': ['off']
 	}
 }
