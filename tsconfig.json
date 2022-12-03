@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"declaration": true,
+		"exactOptionalPropertyTypes": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"baseUrl": ".",
+		"outDir": "dist",
+		"declarationDir": "dist",
+		"rootDirs": ["src"],
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src"]
+}
