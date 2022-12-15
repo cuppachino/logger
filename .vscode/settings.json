@@ -10,6 +10,7 @@
 		"**/node_modules": false
 	},
 	"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	}
