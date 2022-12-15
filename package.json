@@ -28,7 +28,7 @@
     "clear": "node -e \"process.stdout.write('\\033c')\""
   },
   "devDependencies": {
-    "@cuppachino/type-space": "^1.0.1",
+    "@cuppachino/type-space": "^1.1.1",
     "@tsd/typescript": "^4.9.4",
     "@types/eslint": "^8.4.10",
     "@types/node": "^18.11.15",

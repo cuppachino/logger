@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cuppachino/type-space': ^1.0.1
+  '@cuppachino/type-space': ^1.1.1
   '@tsd/typescript': ^4.9.4
   '@types/eslint': ^8.4.10
   '@types/node': ^18.11.15
@@ -26,7 +26,7 @@ dependencies:
   strip-ansi: 7.0.1
 
 devDependencies:
-  '@cuppachino/type-space': 1.0.1
+  '@cuppachino/type-space': 1.1.1
   '@tsd/typescript': 4.9.4
   '@types/eslint': 8.4.10
   '@types/node': 18.11.15
@@ -387,8 +387,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@cuppachino/type-space/1.0.1:
-    resolution: {integrity: sha512-CzBuyyCJYD7yqCS2gKKJwuFhEzqOcER6YHe23P3BnUeE4cTcwgKHUxhMiiRJ+YSFbQuCt5sFu43DKteD3WGlDw==}
+  /@cuppachino/type-space/1.1.1:
+    resolution: {integrity: sha512-UzOFzrlwccGq1gho8j7YW+uHfGidjCeQeYF0EkpRjs0BU4XlWZfXT6d52dH2KVWyQYlYQq7s/LFfl3SnTb/SoQ==}
     dev: true
 
   /@es-joy/jsdoccomment/0.36.1:
