@@ -1,8 +1,16 @@
 {
-  "name": "@cuppachino/ts-kit",
-  "version": "0.1.0",
-  "description": "",
-  "keywords": [],
+  "name": "@cuppachino/logger",
+  "version": "1.0.0",
+  "description": "Tiny logging utility for tiny projects. Enjoy colored console output without overthinking it.",
+  "keywords": [
+    "cuppachino",
+    "log",
+    "logger",
+    "logging",
+    "chalk",
+    "color",
+    "typescript"
+  ],
   "author": "cuppachino <cuppachino.dev@gmail.com>",
   "license": "GPL-3.0",
   "main": "./dist/index.js",

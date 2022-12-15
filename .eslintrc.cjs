@@ -90,6 +90,8 @@ module.exports = {
 			alias: {
 				extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
 				map: [
+					['^@cuppachino/logger$', './src/index.ts'],
+					['@cuppachino/logger', './src'],
 					['^@$', './src/index.ts'],
 					['@', './src']
 				]

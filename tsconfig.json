@@ -12,7 +12,9 @@
 		"outDir": "dist",
 		"declarationDir": "dist",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["src/*"],
+			"@cuppachino/logger": ["src/index"],
+			"@cuppachino/logger/*": ["src/*"]
 		}
 	},
 	"include": ["src"]
