@@ -1,6 +1,6 @@
 {
   "name": "@cuppachino/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny logging utility for tiny projects. Enjoy colored console output without overthinking it.",
   "keywords": [
     "cuppachino",
@@ -12,6 +12,10 @@
     "typescript"
   ],
   "author": "cuppachino <cuppachino.dev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cuppachino/logger.git"
+  },
   "license": "GPL-3.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
