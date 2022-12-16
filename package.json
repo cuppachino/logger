@@ -1,6 +1,6 @@
 {
   "name": "@cuppachino/logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiny logging utility for tiny projects. Enjoy colored console output without overthinking it.",
   "keywords": [
     "cuppachino",
