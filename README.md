@@ -8,11 +8,11 @@ overthinking it.
 [@cuppachino/logger](https://www.npmjs.com/package/@cuppachino/logger)
 
 ```ps
-pnpm add -P @cuppachino/logger
+pnpm add -P @cuppachino/logger chalk
 ```
 
 ```ps
-npm install --save-prod @cuppachino/logger
+npm install --save-prod @cuppachino/logger chalk
 ```
 
 ## 🔍 Example Usage
