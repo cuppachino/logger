@@ -39,9 +39,10 @@ logger.log('bar')
 
 ```ts
 type LoggerOptions = {
-  colors: Color[]
-  tagWrapColors: Color[]
-  tagWrapStyle: WrapStyle
+	colors: Color[]
+	tagWrapColors: Color[]
+	tagWrapStyle: WrapStyle
+	// "angled" | "square" | "curly" | "parens"
 }
 ```
 
