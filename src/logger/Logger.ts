@@ -1,5 +1,6 @@
+import type { UnknownArray } from '@cuppachino/type-space'
 import { createColoredPrefix, createColoredTag } from '@/colors'
-import type { Color, LoggerOptions, WrapStyle } from '@/types'
+import type { Color, Constructor, LoggerOptions, WrapStyle } from '@/types'
 
 export class Logger {
 	private prefix: string
@@ -18,21 +19,47 @@ export class Logger {
 	}
 
 	/**
+	 Returns the prefix and tags joined together.
+	 */
+	private getPrefix() {
+		return [this.prefix, ...this.tags, ':'].join('')
+	}
+
+	/**
 	 Logs a message to the console
 	 */
-	log(...msg: unknown[]) {
-		const pre = [this.prefix, ...this.tags].join('')
-		console.log(pre, ...msg)
+	log(...msg: UnknownArray) {
+		console.log(this.getPrefix(), ...msg)
 		return this
 	}
 
 	/**
 	 Throws an error with a message
 	 */
-	error(...msg: unknown[]) {
-		const pre = [this.prefix, ...this.tags].join('')
-		throw new Error([pre, ...msg].join(' '))
+	public error(Err?: Constructor<Error> | string, ...msg: UnknownArray): never {
+		const prefix = this.getPrefix()
+
+		/**
+		 Err is undefined
+		 */
+		if (!Err) {
+			throw new Error([prefix, ...msg].join(' '))
+		}
+
+		/**
+		 Err is a constructor
+		 */
+		if (typeof Err !== 'string') {
+			console.error(prefix, ...msg)
+			throw new Err()
+		}
+
+		/**
+		 Err is a string
+		 */
+		throw new Error([prefix, Err, ...msg].join(' '))
 	}
+
 	/**
 	 Adds a tag to the logger
 	 */
